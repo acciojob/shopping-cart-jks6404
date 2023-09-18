@@ -10,7 +10,30 @@
 	<!-- the entire body must be written by student -->
     <script type="text/javascript" src="./script.js">
 </script>
+ <h1>Dynamic Shopping List</h1>
 
+    <label for="item-name-input">Item Name:</label>
+    <input type="text" id="item-name-input" aria-labelledby="item-name-input" required><br><br>
+
+    <label for="item-price-input">Item Price:</label>
+    <input type="number" id="item-price-input" aria-labelledby="item-price-input" required><br><br>
+
+    <button id="add" aria-labelledby="add">Add</button><br><br>
+
+    <table>
+        <thead>
+            <tr>
+                <th id="item">Item</th>
+                <th id="price">Price</th>
+            </tr>
+        </thead>
+        <tbody id="shopping-list">
+            <tr>
+                <td>Grand Total</td>
+                <td id="total">0</td>
+            </tr>
+        </tbody>
+    </table>
 </body>
 
 </html>
